@@ -1,0 +1,27 @@
+# Example usage: at https://docs.ultralytics.com/datasets/detect/coco/#applications
+
+path: ../datasets/taco # taco root dir
+train:   train/images # train images (relative to 'path') 4200
+val:     valid/images # val images (relative to 'path') 1704
+test:    #(optional) test images (optional) 100
+
+# Number of classes
+names:
+  0: Aluminium foil
+  1: Bottle cap
+  2: Bottle
+  3: Broken glass
+  4: Can
+  5: Carton
+  6: Cigarette
+  7: Cup
+  8: Lid
+  9: Other litter
+  10: Other plastic
+  11: Paper
+  12: Plastic bag - wrapper
+  13: Plastic container
+  14: Pop tab
+  15: Straw
+  16: Styrofoam piece
+  17: Unlabeled litter

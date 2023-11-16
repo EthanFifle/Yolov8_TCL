@@ -1,0 +1,16 @@
+Yolov8 notes
+
+Converting COCO dataset to yolo formate using ultralytics
+
+from ultralytics.data.converter import convert_coco
+
+convert_coco(labels_dir='path/to/coco/annotations/')
+
+Note needed thought as yolov8 can read COCO dataset. 
+
+Useful information: 
+https://docs.ultralytics.com/usage/cfg/#train
+https://docs.ultralytics.com/datasets/detect/coco/#dataset-yaml
+
+Datasets: 
+https://github.com/AgaMiko/waste-datasets-review
