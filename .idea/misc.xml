@@ -3,5 +3,5 @@
   <component name="Black">
     <option name="sdkName" value="Yolov8_TCL" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="Yolov8_TLC" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="Yolov8_TCL" project-jdk-type="Python SDK" />
 </project>
