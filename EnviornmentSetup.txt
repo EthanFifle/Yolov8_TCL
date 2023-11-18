@@ -1,0 +1,14 @@
+install anacond
+
+Before running the following command set your project interperator to the (base) interperator of anaconda
+    - Found in this directory on windows: C:\Users\(your_urs_name\anaconda3
+
+conda create -n Yolov8_TLC python=3.11
+conda activate Yolov8_TLC
+
+Once the enviornment is activeated run:
+pip install ultralytics
+
+Go to https://pytorch.org/get-started/locally/ to install the Pytorch version/build for your machine
+
+Make sure to set your new conda evniorment named (Yolov8_TLC) as your python interperator
