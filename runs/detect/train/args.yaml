@@ -1,8 +1,8 @@
 task: detect
 mode: train
-model: yolov8n.pt
+model: yolov8m.pt
 data: datasets/taco/taco.yaml
-epochs: 2
+epochs: 600
 patience: 50
 batch: 16
 imgsz: 640
