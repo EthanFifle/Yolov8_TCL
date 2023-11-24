@@ -6,8 +6,8 @@ mode: train  # (str) YOLO mode, i.e. train, val, predict, export, track, benchma
 
 # Train settings -------------------------------------------------------------------------------------------------------
 model:  # (str, optional) path to model file, i.e. yolov8n.pt, yolov8n.yaml
-data:  # (str, optional) path to data file, i.e. coco128.yaml
-epochs: 100  # (int) number of epochs to train for
+data:  'datasets/taco/taco.yaml' # (str, optional) path to data file, i.e. coco128.yaml
+epochs: 400  # (int) number of epochs to train for
 patience: 50  # (int) epochs to wait for no observable improvement for early stopping of training
 batch: 16  # (int) number of images per batch (-1 for AutoBatch)
 imgsz: 640  # (int | list) input images size as int for train and val modes, or list[w,h] for predict and export modes
@@ -95,12 +95,12 @@ pose: 12.0  # (float) pose loss gain
 kobj: 1.0  # (float) keypoint obj loss gain
 label_smoothing: 0.0  # (float) label smoothing (fraction)
 nbs: 64  # (int) nominal batch size
-hsv_h: 0.015  # (float) image HSV-Hue augmentation (fraction)
-hsv_s: 0.7  # (float) image HSV-Saturation augmentation (fraction)
-hsv_v: 0.4  # (float) image HSV-Value augmentation (fraction)
+hsv_h: 0.0  # (float) image HSV-Hue augmentation (fraction)
+hsv_s: 0.0  # (float) image HSV-Saturation augmentation (fraction)
+hsv_v: 0.0  # (float) image HSV-Value augmentation (fraction)
 degrees: 0.0  # (float) image rotation (+/- deg)
-translate: 0.1  # (float) image translation (+/- fraction)
-scale: 0.5  # (float) image scale (+/- gain)
+translate: 0.0  # (float) image translation (+/- fraction)
+scale: 0.0  # (float) image scale (+/- gain)
 shear: 0.0  # (float) image shear (+/- deg)
 perspective: 0.0  # (float) image perspective (+/- fraction), range 0-0.001
 flipud: 0.0  # (float) image flip up-down (probability)
