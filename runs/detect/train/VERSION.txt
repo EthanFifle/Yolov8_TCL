@@ -1,0 +1,3 @@
+Yolov8m @ 400 epochs
+16 batch size
+27 hrs
