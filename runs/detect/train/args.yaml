@@ -1,10 +1,10 @@
 task: detect
 mode: train
-model: yolov8m.pt
+model: null
 data: datasets/taco/taco.yaml
-epochs: 400
+epochs: 300
 patience: 50
-batch: 16
+batch: 32
 imgsz: 640
 save: true
 save_period: -1
@@ -27,7 +27,7 @@ resume: false
 amp: true
 fraction: 1.0
 profile: false
-freeze: null
+freeze: None
 overlap_mask: true
 mask_ratio: 4
 dropout: 0.0
@@ -93,6 +93,6 @@ fliplr: 0.5
 mosaic: 1.0
 mixup: 0.0
 copy_paste: 0.0
-cfg: null
+cfg: customNN/cfg/tcl.yaml
 tracker: botsort.yaml
 save_dir: runs\detect\train

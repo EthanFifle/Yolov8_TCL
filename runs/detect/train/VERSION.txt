@@ -1,3 +1,3 @@
-Yolov8m @ 400 epochs
-16 batch size
-27 hrs
+Yolov8s @ 300 Epochs
+Batch size 32
+10hrs
