@@ -1,6 +1,7 @@
 import os
 
-def validate_move(log_file="moved_images.txt", moved_labels_file="moved_labels.txt"):
+
+def validate_move(log_file, moved_labels_file):
     # Read the names of moved images and labels from the log files
     with open(log_file, 'r') as log:
         moved_images = {line.strip() for line in log.readlines()}
@@ -30,9 +31,10 @@ def validate_move(log_file="moved_images.txt", moved_labels_file="moved_labels.t
             for name in labels_not_in_images:
                 print(f"{name}.txt")
 
+
 if __name__ == "__main__":
-    # Replace this with the actual paths to your moved_images.txt and moved_labels.txt files
-    moved_images_file_path = "moved_images.txt"
-    moved_labels_file_path = "moved_labels.txt"
+    # Replace this with the actual paths to your moved_images.txt and moved_valid_labels.txt files
+    moved_images_file_path = "moved_train_images.txt"
+    moved_labels_file_path = "moved_train_labels.txt"
 
     validate_move(log_file=moved_images_file_path, moved_labels_file=moved_labels_file_path)

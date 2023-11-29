@@ -1,9 +1,9 @@
 import os
 
 # Specify the folder path and class ids
-folder_path = 'datacleanup'
-current_class_id = 5
-class_id_to_replace = 17
+folder_path = '../food/train/labels'
+current_class_id = 'Food'
+class_id_to_replace = 18
 
 
 def replace_class_id(file_path, current_class_id, class_id_to_replace):

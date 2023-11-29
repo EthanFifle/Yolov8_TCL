@@ -4,7 +4,9 @@ import random
 
 # 240 for 8% of images for validate set
 # use num_images_to_move=None to move all images in a directory
-def move_images(source_folder, destination_folder, num_images_to_move=240, log_file="moved_images.txt"):
+
+
+def move_images(source_folder, destination_folder, num_images_to_move, log_file):
 
     # Check if source_folder is empty
     if not os.listdir(source_folder):
@@ -41,12 +43,23 @@ def move_images(source_folder, destination_folder, num_images_to_move=240, log_f
 
     print(f"Total files moved: {moved_count}")
 
+    # Check if the moved_labels_file is not empty and overwrite it
+    if os.path.getsize(log_file) > 0:
+        print(f"Overwriting {log_file}")
+        with open(log_file, 'w') as moved_labels_log:
+            for image_name in log_file:
+                label_file_name = os.path.splitext(image_name)[0] + ".txt"
+                moved_labels_log.write(f"{label_file_name}\n")
+
+
 if __name__ == "__main__":
     # Replace these paths with your actual source and destination folder paths
-    source_folder_path = "Food/train/images"
+    source_folder_path = "food/train/images"
     destination_folder_path = "taco/train/images"
 
     # Replace this with your desired log file path
-    log_file_path = "moved_images.txt"
+    log_file_path = "moved_train_images.txt"
 
-    move_images(source_folder_path, destination_folder_path, log_file=log_file_path)
+    # ******** REMEMBER TO UPDATE num_images_to_move=None (or #) before running!!!! ********** #
+
+    move_images(source_folder_path, destination_folder_path, None, log_file=log_file_path)

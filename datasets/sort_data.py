@@ -2,7 +2,7 @@ import os
 import shutil
 
 
-def move_labels(log_file="moved_images.txt", source_folder="source_labels", destination_folder="destination_labels", moved_labels_file="moved_labels.txt"):
+def move_labels(log_file, source_folder, destination_folder, moved_labels_file):
     # Ensure the source and destination label folders exist
     if not os.path.exists(source_folder):
         print(f"Error: Source folder '{source_folder}' does not exist.")
@@ -17,7 +17,7 @@ def move_labels(log_file="moved_images.txt", source_folder="source_labels", dest
         moved_images = [line.strip() for line in log.readlines()]
 
     moved_count = 0
-    # Mdove corresponding label files to the destination folder and log their names
+    # Move corresponding label files to the destination folder and log their names
     with open(moved_labels_file, 'a') as moved_labels_log:
         for image_name in moved_images:
             label_file_name = os.path.splitext(image_name)[0] + ".txt"
@@ -34,12 +34,20 @@ def move_labels(log_file="moved_images.txt", source_folder="source_labels", dest
 
     print(f"Total files moved: {moved_count}")
 
+    # Check if the moved_labels_file is not empty and overwrite it
+    if os.path.getsize(moved_labels_file) > 0:
+        print(f"Overwriting {moved_labels_file}")
+        with open(moved_labels_file, 'w') as moved_labels_log:
+            for image_name in moved_images:
+                label_file_name = os.path.splitext(image_name)[0] + ".txt"
+                moved_labels_log.write(f"{label_file_name}\n")
+
 if __name__ == "__main__":
     # Replace these paths with your actual source and destination label folder paths
-    source_label_folder_path = "Food/train/labels"
-    destination_label_folder_path = "taco/train/labels"
+    source_label_folder_path = "taco/valid/labels"
+    destination_label_folder_path = "food/valid/labels"
 
     # Replace this with your desired log file path
-    moved_labels_file_path = "moved_labels.txt"
+    moved_labels_file_path = "moved_valid_labels.txt"
 
-    move_labels(log_file="moved_images.txt", source_folder=source_label_folder_path, destination_folder=destination_label_folder_path, moved_labels_file=moved_labels_file_path)
+    move_labels(log_file="moved_valid_images.txt", source_folder=source_label_folder_path, destination_folder=destination_label_folder_path, moved_labels_file=moved_labels_file_path)
