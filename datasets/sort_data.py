@@ -34,17 +34,9 @@ def move_labels(log_file, source_folder, destination_folder, moved_labels_file):
 
     print(f"Total files moved: {moved_count}")
 
-    # Check if the moved_labels_file is not empty and overwrite it
-    if os.path.getsize(moved_labels_file) > 0:
-        print(f"Overwriting {moved_labels_file}")
-        with open(moved_labels_file, 'w') as moved_labels_log:
-            for image_name in moved_images:
-                label_file_name = os.path.splitext(image_name)[0] + ".txt"
-                moved_labels_log.write(f"{label_file_name}\n")
-
 if __name__ == "__main__":
     # Replace these paths with your actual source and destination label folder paths
-    source_label_folder_path = "taco/valid/labels"
+    source_label_folder_path = "food/train/labels"
     destination_label_folder_path = "food/valid/labels"
 
     # Replace this with your desired log file path

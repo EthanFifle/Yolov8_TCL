@@ -1,3 +1,0 @@
-Yolov8s @ 300 Epochs
-Batch size 32
-10hrs

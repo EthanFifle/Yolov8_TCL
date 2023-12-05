@@ -3,10 +3,10 @@ import cv2
 from ultralytics import YOLO
 
 # Load the YOLOv8 model
-model = YOLO('runs/detect/train/weights/best.pt')
+model = YOLO('models/with_out_food/weights/best.pt') # with_out_food is the current best working model
 
 # Open the video file
-video_path = "datasets/taco/test/videos/IMG_1759.MOV"
+video_path = "demo/videos/bottle_test.mp4"
 cap = cv2.VideoCapture(video_path)
 
 # Loop through the video frames

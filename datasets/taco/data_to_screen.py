@@ -1,7 +1,7 @@
 import os
 
-folder_path = 'train/labels'
-class_id = 0  # Class id to look for
+folder_path = 'valid/labels'
+class_id = 18  # Class id to look for
 
 # Iterate through files in the folder
 for filename in os.listdir(folder_path):

@@ -34,7 +34,7 @@ def validate_move(log_file, moved_labels_file):
 
 if __name__ == "__main__":
     # Replace this with the actual paths to your moved_images.txt and moved_valid_labels.txt files
-    moved_images_file_path = "moved_train_images.txt"
-    moved_labels_file_path = "moved_train_labels.txt"
+    moved_images_file_path = "moved_valid_images.txt"
+    moved_labels_file_path = "moved_valid_labels.txt"
 
     validate_move(log_file=moved_images_file_path, moved_labels_file=moved_labels_file_path)

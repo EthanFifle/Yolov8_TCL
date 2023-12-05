@@ -1,0 +1,20 @@
+install Anacond
+
+Before running the following command set your project interpolator to the (base) interpolator of anaconda
+    - Found in this directory on windows: C:\Users\(your_urs_name)\anaconda3
+    - Python Version 3.11 for cuda compatibility
+
+conda create -n Yolov8_TCL python=3.11
+conda activate Yolov8_TCL
+
+Once the environment is activated run (for Windows & Mac):
+pip install -r requirements.txt
+
+*** NOTE: this step is only needed if you plan on using a GPU ***
+Once the requirements are installed you MUST go to:
+https://pytorch.org/get-started/locally/ to install the Pytorch version/build for your machine
+
+Once everything is complete, make sure to set your new conda enrolment named (Yolov8_TLC) as
+your python interpreter for the project.
+
+Enjoy.

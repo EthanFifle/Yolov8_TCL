@@ -3,10 +3,10 @@ from PIL import Image
 from ultralytics import YOLO
 
 # Load a model
-model = YOLO('runs/detect/train/weights/best.pt')  # load a custom model
+model = YOLO('models/with_out_food/weights/best.pt')  # with_out_food is the current best working model
 
 # Predict with the model
-results = model('datasets/taco/test/custom/IMG_1752.jpg')  # predict on an image
+results = model('demo/images/IMG_1746.jpg')  # Change the image source to your desired custom image to test
 
 for r in results:
     im_array = r.plot()  # plot a BGR numpy array of predictions

@@ -1,7 +1,7 @@
 # Example usage: at https://docs.ultralytics.com/datasets/detect/coco/#applications
 
 path: ../datasets/taco # taco root dir
-train:   train/images # train images (relative to 'path') 4200
+train:   with_food/images # with_food images (relative to 'path') 4200
 val:     valid/images # val images (relative to 'path') 1704
 test:    #(optional) test images (optional) 100
 
