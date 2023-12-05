@@ -27,7 +27,8 @@ we decided to attempted to also incorporate food in our dataset to train our mod
 
 To achieve this, many data pre-processing steps needed to be taken.
     1. First, we had to acquire additional yolo-formatted images of food.
-    2. Then, we had to resize the dimensions of these images to match our taco dataset of 640x640 px to ensure NN compatibility.
+    2. Then, we had to resize the dimensions of these images to match our taco dataset of 640x640 px to
+       ensure NN compatibility.
     3. Next, we had to resize the yolo annotations and normalize the coordinates to match our newly resized images.
     4. Finally, we had to spit the data into its respective train & valid folders in order to train and validate our model.
 
