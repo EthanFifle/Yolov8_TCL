@@ -6,7 +6,7 @@ from ultralytics import YOLO
 model = YOLO('models/with_out_food/weights/best.pt') # with_out_food is the current best working model
 
 # Open the video file
-video_path = "demo/videos/bottle_test.mp4"
+video_path = "demo/videos/bottle_test.mov"
 cap = cv2.VideoCapture(video_path)
 
 # Loop through the video frames

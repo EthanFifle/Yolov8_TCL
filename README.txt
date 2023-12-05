@@ -32,4 +32,4 @@ To achieve this, many data pre-processing steps needed to be taken.
     3. Next, we had to resize the yolo annotations and normalize the coordinates to match our newly resized images.
     4. Finally, we had to spit the data into its respective train & valid folders in order to train and validate our model.
 
-All .py scripts used for data-pre processing can be found in the "datasets" and "taco" directories
+All .py scripts used for data-pre processing can be found in the "datasets/food" directory
