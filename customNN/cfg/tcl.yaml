@@ -1,13 +1,13 @@
 # Ultralytics YOLO 🚀, AGPL-3.0 license
-# Default training settings and hyperparameters for medium-augmentation COCO training
+# Custom training settings and hyperparameters
 
-task: detect  # (str) YOLO task, i.e. detect, segment, classify, pose
+task: detect  # (str) YOLO task, i.e. detect, segment, classify, pose (detect for live classification)
 mode: with_food  # (str) YOLO mode, i.e. with_food, val, predict, export, track, benchmark
 
 # Train settings -------------------------------------------------------------------------------------------------------
 model:  # (str, optional) path to model file, i.e. yolov8n.pt, yolov8n.yaml
 data:  'datasets/taco/taco.yaml' # (str, optional) path to data file, i.e. coco128.yaml
-epochs: 300  # (int) number of epochs to with_food for
+epochs: 300  # (int) number of epochs (increase to 600 for better model)
 patience: 50  # (int) epochs to wait for no observable improvement for early stopping of training
 batch: 32  # (int) number of images per batch (-1 for AutoBatch)
 imgsz: 640  # (int | list) input images size as int for with_food and val modes, or list[w,h] for predict and export modes

@@ -2,8 +2,8 @@ import os
 
 # Specify the folder path and class ids
 folder_path = '../food/train/labels'
-current_class_id = 'Food'
-class_id_to_replace = 18
+current_class_id = 'Food' # classes to replaces (in annotations)
+class_id_to_replace = 18 # value to replace classes with
 
 
 def replace_class_id(file_path, current_class_id, class_id_to_replace):

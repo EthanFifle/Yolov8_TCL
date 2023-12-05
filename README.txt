@@ -33,3 +33,5 @@ To achieve this, many data pre-processing steps needed to be taken.
     4. Finally, we had to spit the data into its respective train & valid folders in order to train and validate our model.
 
 All .py scripts used for data-pre processing can be found in the "datasets/food" directory
+
+Going forward we will continue to tune and correct our "with_food" model however for now we recommend using "with_out_food"

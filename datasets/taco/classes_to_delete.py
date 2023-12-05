@@ -1,7 +1,7 @@
 import os
 
 folder_path = 'datacleanup'
-class_id = 1  # Class id to look for
+class_id = 1  # Class id to delete from all annotations
 
 # Iterate through files in the folder
 for filename in os.listdir(folder_path):
