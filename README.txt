@@ -16,7 +16,7 @@ The video is a screen recording of yolov8's camera pane while running the live a
 ### Model Training
 
 To train our model, we used custom configuration files located in the `customNN` directory and fed them to yolov8. Our `train_model.ipynb` notebook contains all the necessary code for training.
-The `/train` directories in the repo are empty due to size limitations on GitHub, as they contain all our training images (13779 images) and labels, primarily sourced from the [TACO dataset](https://universe.roboflow.com/divya-lzcld/taco-mqclx/dataset/3).
+The `/train` directories in the repo are empty due to size limitations on GitHub, as they contain all our training images (13779 images) and labels, primarily sourced from the [TACO dataset](https://universe.roboflow.com/abdillah-halim-hanafi-8zcni/trashdetection-sbsjt).
 The entire dataset specific to our project can also be found in the shared drive link in "project_resources"
 We utilized yolov8's pre-trained weights to expedite training.
 
