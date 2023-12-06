@@ -5,7 +5,7 @@ train:   with_food/images # with_food images (relative to 'path') 4200
 val:     valid/images # val images (relative to 'path') 1704
 test:    #(optional) test images (optional) 100
 
-# Number of classes
+# Custom number of classes based off of data and annotations
 names:
   0: Aluminium foil
   1: Bottle
