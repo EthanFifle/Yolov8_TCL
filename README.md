@@ -28,9 +28,9 @@ Ultralytics docs or what was created by our team members
 The `demo` directory also contains subdirectories `images` and `videos` where you can upload your own images and videos for testing, or run the python scripts using the existing files.
 
 #### Scripts
-Detector_camera.py - created for using a live webcam to run our model
-Detector_images.py - created for taking images as input and passes them through the model to generate an image output
-Detector_videos.py - created for taking videos as input and displays classifications/detections on screen
+- `Detector_camera` - created for using a live webcam to run our model
+- `Detector_images` - created for taking images as input and passes them through the model to generate an image output
+- `Detector_videos` - created for taking videos as input and displays classifications/detections on screen
 
 Follow the instructions in `Environment_Setup` to run these scripts on your local machine. Setup should take under 5 minutes if Anaconda is already installed.
 
