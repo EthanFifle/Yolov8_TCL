@@ -1,8 +1,8 @@
-# Predict with video
+# Small bit of code from ultralytics to run our custom model with videos as input
 import cv2
 from ultralytics import YOLO
 
-# Load the YOLOv8 model
+# Load our model
 model = YOLO('models/with_out_food/weights/best.pt') # with_out_food is the current best working model
 
 # Open the video file

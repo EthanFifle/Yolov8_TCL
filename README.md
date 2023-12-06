@@ -9,7 +9,7 @@
 
 ## Project Overview
 
-"project_resources.txt" contains a link to a shared drive with a video of our model at work live. You can also see the demo [here](https://drive.google.com/drive/folders/18jOq3_vSltYPM_aEwwil0jsShQTyupnN).
+`project_resources` contains a link to a shared drive with a video of our model at work live. You can also see the demo [here](https://drive.google.com/drive/folders/18jOq3_vSltYPM_aEwwil0jsShQTyupnN).
 This video demonstrates our projects capabilities when it comes to real-time classification/detection on objects.
 The video is a screen recording of yolov8's camera pane while running the live application on a PC with GPU computation capability.
 
@@ -19,6 +19,9 @@ To train our model, we used custom configuration files located in the `customNN`
 The `/train` directories in the repo are empty due to size limitations on GitHub, as they contain all our training images (13779 images) and labels, primarily sourced from the [TACO dataset](https://universe.roboflow.com/abdillah-halim-hanafi-8zcni/trashdetection-sbsjt).
 The entire dataset specific to our project can also be found in the shared drive link in "project_resources"
 We utilized yolov8's pre-trained weights to expedite training.
+
+For training with yolov8, Ultralytics [docs](https://docs.ultralytics.com/) was referenced in get everything set up inorder to train properly. Comments are displayed throughout the repository in `README` files and code to distinguishing what is borrowed from 
+Ultralytics docs or what was created by our team members
 
 ### Demo Directory
 
@@ -42,6 +45,6 @@ Two models are available in the `models` directory: `with_food` and `with_out_fo
 3. Resizing and normalizing yolo annotations to match the new image sizes.
 4. Splitting the data into respective train & valid folders.
 
-All scripts used for data preprocessing are in the `datasets/food' and `datasets/taco' directories.
+All scripts used for data preprocessing are in the `datasets/food` and `datasets/taco` directories.
 
-Going forward we will continue to tune and correct our "with_food" model however for now we recommend using "with_out_food"
+Going forward we will continue to tune and correct our `with_food` model however for now we recommend using `with_out_food`

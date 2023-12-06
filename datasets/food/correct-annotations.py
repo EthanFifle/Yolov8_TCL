@@ -1,3 +1,4 @@
+# Created by Naman & Curtis
 import os
 from PIL import Image
 

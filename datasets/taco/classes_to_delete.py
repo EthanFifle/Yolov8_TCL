@@ -1,3 +1,4 @@
+# Created by Ethan
 import os
 
 folder_path = 'datacleanup'
